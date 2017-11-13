@@ -1,2 +1,0 @@
-# codigodemo
-sistema en angular 
