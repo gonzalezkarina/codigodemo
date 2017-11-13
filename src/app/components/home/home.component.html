@@ -1,0 +1,41 @@
+<div class="row">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+           
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/home">Home</a></li>
+              <li><a href="/home2">home2</a></li>
+            </ul>
+           
+            <ul class="nav navbar-nav navbar-right">
+              <li><a  ><span class="glyphicon glyphicon-user"></span>  {{Email}}</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="col-md-12">
+    <h1>Nuevo usuario </h1 >
+    <hr><br>
+   
+    <form>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input  type="text" class="form-control" #email ng-model="email" id="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input  type="password" class="form-control" #password ng-model="password" id="password"  placeholder="Password">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">Text</span>
+          <input  type="text" class="form-control" #msg ng-model="msg" id="msg" placeholder="Additional Info">
+        </div>
+        <button type="button" class="btn btn-success"(click)="valida(email.value, password.value, msg.value)">Guardar</button> 
+      </form>
+
+ 
+
+  </div>
+</div>
